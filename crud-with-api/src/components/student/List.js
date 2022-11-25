@@ -42,7 +42,7 @@ const List = () => {
    <TableContainer component={Paper}>
     <Table>
      <TableHead>
-      <TableRow style={{ backgroundColor: "#616161" }}>
+      <TableRow style={{ backgroundColor: "#FFFF8F" }}>
        <TableCell align="center" >No</TableCell>
        <TableCell align="center" >Name</TableCell>
        <TableCell align="center" >Email</TableCell>

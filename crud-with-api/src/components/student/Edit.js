@@ -2,6 +2,7 @@ import { Typography, Box, makeStyles, Grid, TextField, Button } from "@mui/mater
 import { useState, useEffect } from "react";
 import {  useParams } from "react-router-dom";
 import axios from "axios";
+import "../pages/Home.css";
 
 const Edit = () => {
  
@@ -45,13 +46,13 @@ const Edit = () => {
  }
  return (
   <>
-   <Box textAlign="center" p={2} className="" mb={2}>
+   <Box textAlign="center" p={2} className="EditPageHeading1" mb={2}>
     <Typography variant="h2">React CRUD with API Call</Typography>
    </Box>
 
-   <Grid container justify="center" spacing={4}>
+   <Grid container justify="center" spacing={6} ml={32} item md={12} xs={12}>
     <Grid item md={6} xs={12}>
-     <Box textAlign="center" p={2} className="" mb={2}>
+     <Box textAlign="center" p={2} className="EditPageHeading" mb={2} >
       <Typography variant="h4">Edit Student</Typography>
      </Box>
      <form>
@@ -71,7 +72,7 @@ const Edit = () => {
       </Box>
      </form>
      <Box m={3} textAlign="center">
-      <Button variant="contained" color="primary" href="/" onClick={handleClick}>Back to Home</Button>
+      <Button variant="contained" color="success" href="/" onClick={handleClick}>Back to Home</Button>
      </Box>
     </Grid>
    </Grid >

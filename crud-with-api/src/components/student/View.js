@@ -2,6 +2,7 @@ import { Typography, Box, makeStyles, TableContainer, Table, TableBody, TableCel
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../pages/Home.css";
 
 const View = () => {
  
@@ -26,13 +27,13 @@ const View = () => {
  }
  return (
   <>
-   <Box textAlign="center" p={2} className="">
+   <Box textAlign="center" p={2} className="stuDetail">
     <Typography variant="h4">Student Detail</Typography>
    </Box>
    <TableContainer component={Paper}>
     <Table>
      <TableHead>
-      <TableRow style={{ backgroundColor: "#616161" }}>
+      <TableRow style={{ backgroundColor: "pink" }}>
        <TableCell align="center" className="">ID</TableCell>
        <TableCell align="center" className="">Name</TableCell>
        <TableCell align="center" className="">Email</TableCell>
@@ -48,7 +49,7 @@ const View = () => {
     </Table>
    </TableContainer>
    <Box m={3} textAlign="center">
-    <Button variant="contained" color="primary" href="/" onClick={handleClick}>Back to Home</Button>
+    <Button variant="contained" color="success" href="/" onClick={handleClick}>Back to Home</Button>
    </Box>
   </>
  )
