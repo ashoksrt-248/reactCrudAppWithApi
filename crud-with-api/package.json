@@ -1,5 +1,5 @@
 {
-  "homepage":"https://ashoksrt-248.github.io/crud-with-api",
+  "homepage": "https://ashoksrt-248.github.io/crud-with-api",
   "name": "crud-with-api",
   "version": "0.1.0",
   "private": true,
@@ -21,13 +21,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "json-server":"json-server --watch db.json --port 3001",
     "start:dev":"concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
